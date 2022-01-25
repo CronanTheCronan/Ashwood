@@ -1,0 +1,30 @@
+[
+  {
+    "Id": 1,
+    "Name": "Face"
+  },
+  {
+    "Id": 2,
+    "Name": "Bath & Body"
+  },
+  {
+    "Id": 3,
+    "Name": "Salves & Balms"
+  },
+  {
+    "Id": 4,
+    "Name": "Pets"
+  },
+  {
+    "Id": 5,
+    "Name": "Kids & Baby"
+  },
+  {
+    "Id": 6,
+    "Name": "Home"
+  },
+  {
+    "Id": 7,
+    "Name": "Scent Blends"
+  }
+]

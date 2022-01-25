@@ -1,0 +1,38 @@
+[
+  {
+    "Name": "Balance Me",
+    "TagLine": "Healing, Hydrating, & Protecting Moisturizer",
+    "Description": "For Acne-Prone, Oily, or Combination Skin. After cleansing, apply to clean and dry face and neck. Wear alone or under make-up to heal, hydrate, and protect.",
+    "Price": 26,
+    "PictureUrl": "images/products/balanceme.png",
+    "Size": "2 oz",
+    "ProductCategoryId": 1
+  },
+  {
+    "Name": "Cleanse Me",
+    "TagLine": "Soothing Oil Cleanser for Face",
+    "Description": "A soothing, gentle facial cleansing oil formulated to meet the needs of oily, dry, and combination skin. Leaves cleansed skin feeling more soft than before -- oil cleansing will change your skin care routine completely. Massage Cleanse Me into face for one to five minutes, apply a hot cloth, and start your day with rejuvenated clean skin.",
+    "Price": 25,
+    "PictureUrl": "images/products/cleanseme.png",
+    "Size": "4 oz",
+    "ProductCategoryId": 1
+  },
+  {
+    "Name": "Groom Me",
+    "TagLine": "Conditioning Beard Oil",
+    "Description": "This naturally stimulating mix of essential oils replenishes moisture, prevents split ends, and restores shine and vibrancy. If you find your skin dry, itcy, or irritated this is the perfect product to leave your face feeling conditioned and revived.",
+    "Price": 18,
+    "PictureUrl": "images/products/groomme.png",
+    "Size": "1 oz",
+    "ProductCategoryId": 1
+  },
+  {
+    "Name": "Drench",
+    "TagLine": "Hydrating Body Butter",
+    "Description": "Drench yourself and your loved ones in healing moisture, with skin-healing, herbal infused oils and essential oils. Drench is thick, but easy to apply -- It's a rich, fluffy, whipped waterless butter that will protect, strengthen, and repair your skin.",
+    "Price": 38,
+    "PictureUrl": "images/products/drench.png",
+    "Size": "9 oz",
+    "ProductCategoryId": 2
+  }
+]
