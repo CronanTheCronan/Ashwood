@@ -1,21 +1,16 @@
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using API.Dtos;
+using API.Errors;
 using AutoMapper;
 using Core.Entities;
 using Core.Interfaces;
 using Core.Specifications;
-using Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class ProductsController : ControllerBase
+    public class ProductsController : BaseApiController
     {
         private readonly IGenericRepository<Product> _productRepo;
         private readonly IGenericRepository<ProductCategory> _productCategoryRepo;
@@ -45,7 +40,7 @@ namespace API.Controllers
             var product = await _productRepo.GetEntityWithSpec(spec);
 
             if (product == null)
-                return NotFound();
+                return NotFound(new ApiResponse(404));
 
             return _mapper.Map<Product, ProductToReturnDto>(product);
         }
