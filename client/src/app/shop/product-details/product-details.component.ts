@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IProduct } from 'src/app/shared/models/product';
+import { BreadcrumbService } from 'xng-breadcrumb';
 import { ShopService } from '../shop.service';
 
 @Component({
@@ -11,7 +12,11 @@ import { ShopService } from '../shop.service';
 export class ProductDetailsComponent implements OnInit {
   product: IProduct;
 
-  constructor(private shopService: ShopService, private activateRoute: ActivatedRoute) { }
+  constructor(private shopService: ShopService, 
+              private activateRoute: ActivatedRoute,
+              private bcService: BreadcrumbService) { 
+                this.bcService.set('@productDetails',' ');
+              }
 
   ngOnInit(): void {
     this.loadProduct();
@@ -21,7 +26,7 @@ export class ProductDetailsComponent implements OnInit {
     this.shopService.getProduct(+this.activateRoute.snapshot.paramMap.get('id')).subscribe({
       next: (product) => {
         this.product = product;
-        console.log(this.product);
+        this.bcService.set('@productDetails', product.name)
       },
       error: (err) => console.log(err)
     });
