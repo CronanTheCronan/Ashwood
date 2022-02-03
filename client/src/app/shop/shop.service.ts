@@ -2,6 +2,7 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { IPagination } from '../shared/models/pagination';
+import { IProduct } from '../shared/models/product';
 import { IProductCategory } from '../shared/models/product-category';
 import { ShopParams } from '../shared/models/shop-params';
 
@@ -12,6 +13,10 @@ export class ShopService {
   baseUrl = 'https://localhost:5001/api/';
 
   constructor(private http: HttpClient) { }
+
+  getProduct(id: number) {
+    return this.http.get<IProduct>(this.baseUrl + 'products/' + id);
+  }
 
   getProducts(shopParams: ShopParams) {
     let params = new HttpParams();

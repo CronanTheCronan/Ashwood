@@ -1,0 +1,60 @@
+h2 {
+    padding-bottom: 3px;
+}
+
+.container {
+    margin: 50px auto;
+    color: #333;
+    min-height: 75px;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url('../../assets/leafheader.jpg');
+    min-height: 100vh;
+    margin-top: 0px;
+}
+
+.bgimg-2 {
+    background-image: url('../../assets/leaf2.jpg');
+    height: 70vh;
+}
+
+.bgimg-3 {
+    background-image: url('../../assets/hiker.jpg');
+    min-height: 70vh;
+}
+
+.bgimg-4 {
+    background-image: url('../../assets/leafheader.jpg');
+    min-height: 70vh;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.attention-grabber {
+    background-color: #88A960;
+    color: #fff;
+    padding: 18px;
+    font-family: "Great Vibes", cursive;
+    font-size: 64px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px #000;
+    -webkit-box-shadow: 1px 1px 2px 0px #000; 
+        box-shadow: 1px 1px 2px 0px #000;
+}

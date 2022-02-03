@@ -6,4 +6,11 @@
 /* Importing Datepicker SCSS file. */
 @import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
 
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap');
+
+body, html {
+    background-color: #efefef;
+    height: 100%;
+    margin: 0;
+    font-family: "Poppins", Helvetica, sans-serif;
+}
